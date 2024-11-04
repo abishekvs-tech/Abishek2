@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title style="color: white;">Workshop Registration Form</title>
+    
+</head>
+
+<body style="font-family: Arial, sans-serif;
+background-color: #1e9cf0;
+margin: 0;
+padding: 20px;">
+    <h1 style="text-align: center;
+    color: #333;">Workshop Registration Form</h1>
+    <form style="   background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(194, 6, 175, 0.1);
+    max-width: 500px;
+    margin: auto;" action="/submit_registration" method="post" enctype="multipart/form-data">
+        <fieldset style="  border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px;">
+            <legend style=" font-weight: bold;
+    color: #555;">
+    Personal Information</legend>
+            <label for="name">Full Name :</label>
+            <input style=" margin-right: 5px;" type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address :</label>
+            <input style=" margin-right: 5px;" type="email" id="email" name="email" required><br><br>
+
+            <label for="contact">Contact Number :</label>
+            <input style=" margin-right: 5px;" type="tel" id="contact" name="contact" required><br><br>
+
+            <label>Gender</label><br>
+            Male :<input style=" margin-right: 5px;" type="radio" id="male" name="gender" value="male">
+
+            Female :<input style=" margin-right: 5px;" type="radio" id="female" name="gender" value="female">
+
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Workshop Details</legend>
+            <label for="date">Choose a Preferred Date:</label><br><br>
+            <input style=" margin-right: 5px;" type="radio" id="cloud" name="topic" value="Cloud Computing" required>
+            Day 1: Cloud Computing <br>
+            <br>
+            <input style=" margin-right: 5px;" type="radio" id="ml" name="topic" value="Machine Learning" required>
+            Day
+            2: Machine Learning <br>
+            <br>
+            <input style=" margin-right: 5px;" type="radio" id="analytics" name="topic" value="Data Analytics" required>
+            Day 3: Data Analytics <br>
+            <br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Password</legend>
+            <label for="password">Create a Password:</label>
+            <input style=" margin-right: 5px;" type="password" id="password" name="password" required minlength="8"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input style=" margin-right: 5px;" type="password" id="confirm-password" name="confirm-password"
+                required><br><br>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="receipt">Upload Payment Receipt:</label>
+            <input style=" margin-right: 5px;" type="file" id="receipt" name="receipt" accept=".jpg, .png, .pdf"
+                required><br>
+        </fieldset>
+        <br><br>
+
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comments">Comments or Special Requirements:</label><br>
+            <textarea style="resize: vertical; width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px; " id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset><br><br>
+        <center>
+            <button style="background-color: #00b3ff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;" type="submit">Submit Registration</button>
+        </center>
+    </form>
+</body>
+
+</html>
